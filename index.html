@@ -3,13 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./src/iban/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Laboratorio 11</title>
   </head>
   <body>
     <div id="app">
-      <h1>TypeScript Sandbox</h1>
+      <h1>Laboratorio 11 - IBAN</h1>
+      <div id="form">
+        <p>Introduzca el IBAN</p>
+        <input type="text" id="iban" />
+        <button id="check">Buscar</button>
+      </div>
+      <div class="result">
+        <div id="format"></div>
+        <div id="validation"></div>
+        <div id="bank"></div>
+        <div id="office_code"></div>
+        <div id="control_digit"></div>
+        <div id="id"></div>
+      </div>
+      <div class="footer">
+        <a href="./src/getImages/index.html">Extraer enlaces de imágenes</a>
+      </div>
     </div>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/src/iban/ui.ts"></script>
   </body>
 </html>

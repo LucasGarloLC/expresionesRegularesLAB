@@ -4,7 +4,10 @@ const printSrc = (src: string) => {
     if(src){
         const p = document.createElement("p");
         p.innerText = src;
-        document.querySelector(".result")?.appendChild(p);
+        const result = document.querySelector(".result");
+        if(result){
+            result.appendChild(p);
+        }
     }
 }
 
@@ -25,7 +28,10 @@ const obtain = () => {
 const printNotFoundResult = () => {
     const p = document.createElement("p");
     p.innerText = "No se encontraron imágenes";
-    document.querySelector(".result")?.appendChild(p);
+    const result = document.querySelector(".result");
+    if(result){
+        result.appendChild(p);
+    }
 }
 
 const reset = () => {

@@ -16,6 +16,9 @@ const getImages = () => {
 
 export const getSrc = () => {
     const images = getImages();
+    if(!images) {
+        return;
+    }
     const regexExec = /"(?<src>.*)"/;
     const src = images?.map((image) => {
         return image.match(regexExec);
